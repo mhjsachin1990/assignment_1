@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Department</title>
+</head>
+<body>
+    <h1>Add Department</h1>
+    <form action="add_department/" method="POST" novalidate>
+        {% csrf_token %}
+        Department Name:<br>
+        <input name="department_name"><br>
+        Course Number: <br>
+        <input name="course_number"><br>
+        Number of teachers:
+        <input name="teacher_number">
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

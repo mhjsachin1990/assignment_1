@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>New Students</title>
+</head>
+<body>
+    <h1>Add new students</h1>
+    <form action="addrecord/" method="post">
+        {% csrf_token %}
+        First Name: <br>
+        <input name="firstname"><br>
+        Last Name: <br>
+        <input name="lastname"><br>
+        Date of Birth (YYYY-MM-DD):<br>
+        <input name="dob"><br>
+        Roll Number:<br>
+        <input name="roll_number"><br>
+        Department Name:<br>
+        <input name="department_name"><br>
+        Course Name:<br>
+        <input name="course_name"><br>
+        Semester Number:<br>
+        <input name="semister_number"><br>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+</html>
